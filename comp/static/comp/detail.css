@@ -1,0 +1,48 @@
+.navbar {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: bold;
+         }
+body {
+        font-family: 'Open Sans', sans-serif;
+        }
+h2 {
+        word-wrap: break-word;
+        width: 400px;
+}
+/* Tag selectors such as h2 are for font configuration only, such as boldness and size.
+   Class selectors are for absolute positioning.*/
+.title {
+        position: relative;
+        left: 50px;
+        /*top: 50px;*/
+        font-weight: bold;
+        text-align: left;
+}
+
+.data {
+        position: relative;
+        left: 50px;
+        /*top: 100px;*/
+        font-size: 16px;
+        white-space: nowrap;
+}
+
+    table {
+        width:20%;
+        border: none;
+    }
+    table, td {
+        border-collapse: collapse;
+    }
+    td {
+        padding: 5px;
+        text-align: left;
+        width: 10%;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+       background-color:#fff;
+    }
+

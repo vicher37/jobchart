@@ -1,0 +1,58 @@
+.navbar {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: bold;
+         }
+body {
+        font-family: 'Open Sans', sans-serif;
+        background: white url("images/index_background.jpg") no-repeat;
+        }
+h2 {
+        font-weight: bold;
+        text-align: center;
+}
+/* Tag selectors such as h2 are for font configuration only, such as boldness and size.
+   Class selectors are for absolute positioning.*/
+
+.semi_transparent_bg {
+            position: absolute;
+            top: 150px;
+            left: 30px;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+            filter: alpha(opacity=30);
+            opacity: 0.5;
+            background-color: #fff;
+            width: 1220px;
+            height: 240px;
+            border-radius:3px;
+            z-index:1;
+/* The key is to add a parallel container with absolute positioning and z-index = 1, while texts have z-index = 2 */
+}
+.search {
+        position: relative;
+        top: 150px;
+        text-align: center;
+        z-index: 2;
+}
+
+.list {
+        position: relative;
+        top: 150px;
+        font-size: 16px;
+        text-align: center;
+        z-index: 2;
+}
+.rating_list{
+        list-style-type: none;
+}
+.input_box {
+        width: 200px;
+        height: 45px;
+}
+.body_box {
+        position: relative;
+}
+
+input::-webkit-input-placeholder { font-size: 12pt; }
+input::-moz-placeholder { font-size: 12pt; }
+input:-ms-input-placeholder { font-size: 12pt; }
+input:-moz-placeholder { font-size: 12pt; }

@@ -1,0 +1,38 @@
+admin site:
+    username: admin
+    password: password
+    email: vickyqijingzhang@gmail.com
+
+mysql server:
+username: root
+password: (none)
+
+server running location:
+http://127.0.0.1:8080/
+port is 8080!
+
+html css selector :
+http://learn.shayhowe.com/advanced-html-css/complex-selectors/
+
+Two common problems:
+Return problem - does this function return a new object or modify the original one?
+Type problem - is the object type correct? Is this function applicable to this type?
+
+URL analysis:
+http://www.indeed.com/cmp/Indeed/reviews
+http://www.indeed.com/cmp/Indeed/reviews?fcountry=US&start=20
+
+http://www.indeed.com/cmp/Walmart/reviews
+http://www.indeed.com/cmp/Walmart/reviews?fcountry=US&start=20
+
+Where to look for background pic:
+http://www.fabulousblogging.com/2012/10/the-best-free-websites-for-blog-background-images/
+
+#!/usr/bin/env python
+
+
+have to do 4 things before project can run :
+1) set settings
+2) django.setup()
+3) sudo /usr/local/mysql/support-files/mysql.server start
+4) make sure to use python3: python3 manage.py runserver

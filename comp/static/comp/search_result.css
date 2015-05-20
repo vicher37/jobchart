@@ -1,0 +1,31 @@
+.navbar {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: bold;
+         }
+body {
+        font-family: 'Open Sans', sans-serif;
+        }
+/* Tag selectors such as h2 are for font configuration only, such as boldness and size.
+   Class selectors are for absolute positioning.*/
+.words {
+        position: absolute;
+        left: 100px;
+        top: 50px;
+        font-weight: bold;
+}
+
+.list {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        font-size: 16px;
+        white-space: nowrap;
+        list-style-type: none
+
+}
+.rating_list {
+        list-style-type: none;
+        font-size: 14pt;
+        line-height: 150%;
+
+}

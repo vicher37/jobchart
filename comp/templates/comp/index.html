@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>JobCharted - Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'comp/index.css' %}" />
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">JobCharted</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/comp/">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/comp/">Company
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Rating</a></li>
+            <li><a href="#">Review Analytics</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rating</a></li>
+        <li><a href="#">Review Analytics</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/comp/"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="body_box">
+    <!--
+    <div class="background_image">
+        {% load staticfiles %}
+        <img src="{% static "comp/index_background.jpg" %}" alt="My image"/></img>
+    </div>
+    -->
+
+    <div class="semi_transparent_bg col-lg-12 col-md-10 col-sm-6">
+
+    </div>
+        <div class="search col-lg-12 col-md-10 col-sm-6">
+            <h1><b>Explore company ratings and review analytics</b></h1>
+
+            <div class="query">
+                <form action="/comp/search_result/" method="post">
+                    {% csrf_token %}
+                    <input class="input-group-lg input_box" id="company_name" type="text" name="company_name" placeholder="Company Name">
+                    <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    <!--<input type="submit" value="OK" > -->
+                </form>
+            </div>
+        </div>
+    <!-- make sure to use grid system on every div once you start using it on one div! -->
+        <div class="list col-lg-12 col-md-10 col-sm-6">
+            <div class="text">
+                <h3><b>Our most popular companies</b></h3>
+            </div>
+            {% if rating_list %}
+                <div class="rating_list">
+                {% for rating in rating_list %}
+                    <a href="/comp/{{ rating.id }}/company/" type="button" class="btn btn-default btn-lg">{{ rating.company }}</a>
+                {% endfor %}
+                </div>
+            {% else %}
+                <p>No company is available.</p>
+            {% endif %}
+        </div>
+
+</div>
+
+</body>
+</html>

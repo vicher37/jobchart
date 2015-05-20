@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'comp/review_summary.css' %}" />
+
+    <title>Review Analytics</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/comp/">JobCharted</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="/comp/">Home</a></li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/comp/{{ rating.id }}/company/">Company - {{ common_words.0.company }}
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/comp/{{ common_words.0.company_id }}/">Ratings</a></li>
+            <li class="active"><a href="/comp/{{ common_words.0.company_id }}/review_summary/">Review Analytics</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rating</a></li>
+        <li><a href="#">Review Analytics</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/comp/"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="title">
+        {% if common_words %}
+            <h2>{{ common_words.0.company }} - Review Analytics Summary</h2>
+        {% endif %}
+    </div>
+
+    <div>
+        {% if common_words %}
+            <table class="data">
+                <tr>
+                    <td> <b>Company  </b> </td>
+                    <td> <b>Word  </b> </td>
+                    <td> <b>Part of Speech  </b> </td>
+                    <td> <b>Frequency  </b> </td>
+                </tr>
+                {% for word in common_words %}
+                    <tr>
+                        <td>{{ word.company }}</td>
+                        <td>{{ word.word }}</td>
+                        <td>{{ word.part_of_speech }}</td>
+                        <td>{{ word.frequency }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>The review summary for this company is not available.</p>
+        {% endif %}
+    </div>
+</div>
+
+</body>
+</html>

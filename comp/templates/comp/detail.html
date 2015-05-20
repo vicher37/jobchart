@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'comp/detail.css' %}" />
+
+    <title>Rating details - {{ rating.company }}</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="/comp/">JobCharted</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/comp/">Home</a></li>
+        <li class="dropdown active">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/comp/{{ rating.id }}/company/">Company - {{ rating.company }}
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="#">Ratings</a></li>
+            <li><a href="/comp/{{ rating.id }}/review_summary/">Review Analytics</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rating</a></li>
+        <li><a href="#">Review Analytics</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/comp/"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- The biggest container spans the whole width of webpage, whereas the text containers don't -->
+<div class="jumbotron col-lg-12 col-md-12 col-sm-12">
+    <div>
+        <h2 class="title col-lg-10 col-md-10 col-sm-10">
+            {{ rating.company }} Ratings
+        </h2>
+    </div>
+
+    <div>
+        <table class="data col-lg-8 col-md-8 col-sm-8">
+            <tr>
+                <td>Company name</td>
+                <td>{{ rating.company }}</td>
+            </tr>
+            <tr>
+                <td>Facebook likes</td>
+                <td>{{ rating.FB_likes }}</td>
+            </tr>
+            <tr>
+                <td>Facebook likes score</td>
+                <td>{{ rating.FB_likes_score }}</td>
+            </tr>
+            <tr>
+                <td>Glassdoor overall rating</td>
+                <td>{{ rating.overall_rating }}</td>
+            </tr>
+            <tr>
+                <td>Senior leadership rating</td>
+                <td>{{ rating.senior_leadership_rating }}</td>
+            </tr>
+            <tr>
+                <td>Work life balance rating</td>
+                <td>{{ rating.work_life_balance_rating }}</td>
+            </tr>
+            <tr>
+                <td>Recommend to friend rating</td>
+                <td>{{ rating.recommend_to_friend_rating }}</td>
+            </tr>
+            <tr>
+                <td>Culture and values rating</td>
+                <td>{{ rating.culture_and_values_rating }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
