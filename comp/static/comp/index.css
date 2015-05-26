@@ -14,14 +14,16 @@ h2 {
    Class selectors are for absolute positioning.*/
 
 .semi_transparent_bg {
-            position: absolute;
+            position: relative;
+            text-align: center;
+            width: 95%;
+            margin: 0 auto;
             top: 150px;
             left: 30px;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
             filter: alpha(opacity=30);
             opacity: 0.5;
             background-color: #fff;
-            width: 1220px;
             height: 240px;
             border-radius:3px;
             z-index:1;
@@ -29,14 +31,14 @@ h2 {
 }
 .search {
         position: relative;
-        top: 150px;
+        top: -90px;
         text-align: center;
         z-index: 2;
 }
 
 .list {
         position: relative;
-        top: 150px;
+        top: -90px;
         font-size: 16px;
         text-align: center;
         z-index: 2;
