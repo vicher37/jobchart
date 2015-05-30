@@ -79,8 +79,8 @@
       <file leaf-file-name="review_summary.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comp/static/comp/review_summary.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5439189" vertical-offset="143" max-vertical-offset="735">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.785473" vertical-offset="0" max-vertical-offset="735">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -739,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comp/static/comp/review_summary.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5439189" vertical-offset="143" max-vertical-offset="735">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.785473" vertical-offset="0" max-vertical-offset="735">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
       </provider>
