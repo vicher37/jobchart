@@ -3,13 +3,18 @@
          font-weight: bold;
          width: 100%;
          }
+html, body {
+        width: 100%;
+        margin: 0px;
+}
+html { overflow-y: scroll; }
 body {
         font-family: 'Open Sans', sans-serif;
         }
 /* Tag selectors such as h2 are for font configuration only, such as boldness and size.
    Class selectors are for absolute positioning.*/
 table  {
-        width: 100%;
+        width: 80%;
         }
 td  {
         width: 25%;
