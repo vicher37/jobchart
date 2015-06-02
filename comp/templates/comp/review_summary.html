@@ -3,7 +3,7 @@
 <head lang="en">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -38,7 +38,7 @@
         </li>
         <li><a href="#">Rating</a></li>
         <li><a href="#">Review Analytics</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/about/">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
@@ -49,7 +49,7 @@
   </div>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron container-fluid span10">
     <div class="title">
         {% if common_words %}
             <h2>{{ common_words.0.company }} - Review Analytics Summary</h2>
@@ -58,7 +58,7 @@
 
     <div>
         {% if common_words %}
-            <table class="data table table-bordered table-striped table-hover">
+            <table class="data table table-bordered table-striped table-hover container-fluid">
                 <tr>
                     <th>Company</th>
                     <th>Word</th>

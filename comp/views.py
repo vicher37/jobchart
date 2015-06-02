@@ -53,6 +53,9 @@ def company(request, company_id):
     rating = ratings.objects.get(id=company_id)
     return render(request, 'comp/company.html', {'rating': rating})
 
+def about(request):
+    return render(request, 'comp/about.html')
+
 def get_name(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':

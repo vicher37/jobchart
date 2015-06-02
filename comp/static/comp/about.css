@@ -1,0 +1,21 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.vicky_img
+{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 20%;
+    top: 30px;
+}
+@media (max-width: 768px) {
+  .vicky_img {
+    top: 0px;
+  }
+}
