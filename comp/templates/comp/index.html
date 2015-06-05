@@ -58,18 +58,24 @@
     -->
 
     </div>
-        <div class="search col-lg-12 col-md-10 col-sm-6">
+    <div class="row">
+        <div class="search col-xs-12">
             <h1><b>Explore company ratings and review analytics</b></h1>
-
-            <div class="query">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4 query">
                 <form action="/search_result/" method="post">
                     {% csrf_token %}
                     <input class="input-group-lg input_box" id="company_name" type="text" name="company_name" placeholder="Company Name">
                     <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                     <!--<input type="submit" value="OK" > -->
                 </form>
-            </div>
         </div>
+        <div class="col-xs-4"></div>
+    </div>
+        
     <!-- make sure to use grid system on every div once you start using it on one div! -->
         <div class="list col-lg-12 col-md-10 col-sm-6">
             <div class="text">
