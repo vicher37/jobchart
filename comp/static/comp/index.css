@@ -36,6 +36,7 @@ h1, h2, h3 {
         top: -90px;
         text-align: center;
         z-index: 2;
+        color: white;
 }
 
 .list {
@@ -44,6 +45,7 @@ h1, h2, h3 {
         font-size: 16px;
         text-align: center;
         z-index: 2;
+        color: white;
 }
 .rating_list{
         list-style-type: none;
@@ -51,6 +53,7 @@ h1, h2, h3 {
 .input_box {
         width: 200px;
         height: 45px;
+        
 }
 .body_box {
         position: relative;
