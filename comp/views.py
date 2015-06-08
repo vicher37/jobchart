@@ -56,6 +56,9 @@ def company(request, company_id):
 def about(request):
     return render(request, 'comp/about.html')
 
+def review_analytics(request):
+    return render(request, 'comp/review_analytics.html')
+
 def get_name(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
