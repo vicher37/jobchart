@@ -8,6 +8,7 @@ html,body
 }
 .tableDiv {
     overflow-x: scroll;
+    overflow-y: scroll;
 }
 table  {
         width: 80%;
