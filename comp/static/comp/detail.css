@@ -13,16 +13,12 @@ h2 {
    Class selectors are for absolute positioning.*/
 .title {
         position: relative;
-        left: 50px;
-        /*top: 50px;*/
         font-weight: bold;
         text-align: left;
 }
 
 .data {
         position: relative;
-        left: 50px;
-        /*top: 100px;*/
         font-size: 16px;
         white-space: nowrap;
         width: 60%;
