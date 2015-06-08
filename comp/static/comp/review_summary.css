@@ -6,6 +6,9 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+.tableDiv {
+    overflow-x: scroll;
+}
 table  {
         width: 80%;
         }
