@@ -61,7 +61,12 @@ h1, h2, h3 {
 .body_box {
         position: relative;
 }
-
+@media (max-width: @768px) { 
+.search {
+         position: relative;
+         top: 20px;
+}
+}
 input::-webkit-input-placeholder { font-size: 12pt; }
 input::-moz-placeholder { font-size: 12pt; }
 input:-ms-input-placeholder { font-size: 12pt; }
