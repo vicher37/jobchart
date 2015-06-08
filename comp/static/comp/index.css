@@ -63,10 +63,18 @@ h1, h2, h3 {
 }
 
 @media screen and (max-device-width: 768px)  { 
-.search {
-         position: relative;
-         top: 20px;
-}
+         .search {
+                  position: relative;
+                  top: 20px;
+         }
+         .query {
+                  position: relative;
+                  top: 20px;
+         }
+         .list {
+                  position: relative;
+                  top: 20px;
+         }
 }
 input::-webkit-input-placeholder { font-size: 12pt; }
 input::-moz-placeholder { font-size: 12pt; }
