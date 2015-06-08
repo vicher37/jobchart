@@ -28,6 +28,10 @@ h2 {
         width: 60%;
 }
 
+.tableDiv {
+    overflow-x: scroll;
+}
+
     table {
         width:20%;
         border: none;
