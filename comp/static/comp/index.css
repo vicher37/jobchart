@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 .search {
         position: relative;
-        top: 20px;
+        top: 150px;
         text-align: center;
         z-index: 2;
         color: white;
@@ -62,10 +62,10 @@ h1, h2, h3 {
         position: relative;
 }
 
-@media (max-width: @screen-sm-min) { 
+@media screen and (max-device-width: 768px)  { 
 .search {
          position: relative;
-         top: 150px;
+         top: 20px;
 }
 }
 input::-webkit-input-placeholder { font-size: 12pt; }
