@@ -26,6 +26,7 @@ h2 {
 
 .tableDiv {
     overflow-x: scroll;
+    overflow-y: scroll;
 }
 
     table {
