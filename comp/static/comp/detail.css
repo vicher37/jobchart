@@ -32,10 +32,11 @@ h2 {
         white-space: nowrap;
         width: 60%;
 }
-
-.tableDiv {
+@media (max-width: 768px) {
+    .tableDiv {
     overflow-x: scroll;
     overflow-y: scroll;
+    }
 }
 
     table {

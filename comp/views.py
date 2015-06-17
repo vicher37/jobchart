@@ -15,14 +15,14 @@ def index(request):
     context = {'rating_list' : rating_list}
     return render(request, 'comp/index.html', context)
 
-def detail(request, company_id):
+def rating_page(request, company_id):
     try:
         # chose to call id as company_id because id is unique to the company, not necessarily to the rating
         # however, the return object is called rating because it includes all the detailed ratings of the company
         rating = ratings.objects.get(pk = company_id)
     except ratings.DoesNotExist:
         raise Http404("Company does not exist")
-    return render(request, 'comp/detail.html', {'rating' : rating})
+    return render(request, 'comp/rating_page.html', {'rating' : rating})
 
 def review_summaries(request, company_id):
     # common_nouns = comp.review_summary.common_nouns(company)
@@ -56,8 +56,8 @@ def company(request, company_id):
 def about(request):
     return render(request, 'comp/about.html')
 
-def review_analytics(request):
-    return render(request, 'comp/review_analytics.html')
+def methodology(request):
+    return render(request, 'comp/methodology.html')
 
 def get_name(request):
     # if this is a POST request we need to process the form data

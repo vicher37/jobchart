@@ -1,3 +1,7 @@
+.navbar {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: bold;
+         }
 html,body
 {
     width: 100%;

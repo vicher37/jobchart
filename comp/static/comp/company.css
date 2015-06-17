@@ -4,6 +4,8 @@ body {
 .navbar {
          font-weight: bold;
          width: 100%;
+         font-family: 'Open Sans', sans-serif;
+         font-weight: bold;
 }
 h2 {
         position: relative;
