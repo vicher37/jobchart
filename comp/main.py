@@ -9,14 +9,12 @@ import pandas # as pd?
 import facebook
 import glassdoor
 from django.core.management import call_command
-from mysql import connector
 import datetime
 import time
 from comp.models import ratings
 from django import setup
 
-list_companies = ['walmart', 'cisco', 'pepsi', 'facebook', 'generalmotors',
-                      'honda', 'ford', 'visa', 'vmware', 'realmassive']
+list_companies = ['citi']
 
 def ask_list():
     userInput = input('Please input the companies you are interested in and separate their names with one space.'
@@ -117,8 +115,7 @@ def sort_weight():
 
 
 
-def inputCompanies(listCompanies = ['walmart', 'cisco', 'pepsi', 'facebook', 'GM',
-                      'honda', 'ford', 'visa', 'vmware', 'realmassive']):
+def inputCompanies(listCompanies):
     list_companies = listCompanies
 
 def getCompanies():
@@ -129,6 +126,6 @@ def getCompanies():
 
 if __name__ == '__main__':
         # only do write_to_my_sql here when you're starting off fresh new!!
-        pass
+        return_rating()
 
 

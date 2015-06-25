@@ -8,18 +8,22 @@ from bs4 import BeautifulSoup
 import requests
 from django.utils.encoding import smart_str
 from urllib import request
+import main
 
 
 # get all reviews of a company
 def get_review(url, count, company):
     print(url)
     #r = requests.get(url)
-    r = request.urlopen(url)
-    data = r.read()
+    try:
+        r = request.urlopen(url)
+        data = r.read()
+    except:
+        print('Url for ' + company + 'is not correct.')
 
 #    for lines in open(data,'rb'):
 #        decodedLine = lines.decode('UTF-8')
-# commented out because it is unnecessary to print out 20+ htmls for each company, it would be two cluttered.
+# commented out because it is unnecessary to print out 20+ htmls for each company, it would be too cluttered.
 # can always uncomment it for debugging purposes.
 #    with open('D:\\Python\\chart\\code_test\\'+ company + '_' + str(count) + '.html', 'w') as outfile:
 #        #data_decoded = smart_str(data)
@@ -39,8 +43,14 @@ def get_review(url, count, company):
     print(len(description_tag_list))
     print(description_tag_list[1])
     if len(description_tag_list) < 20:
+        for tag in description_tag_list:
+            wrangle_txt_and_write(tag, company)
+
+            reached_end = True
+            global reached_end
+            break
         print('All reviews have been extracted')
-        sys.exit(0)
+
     else:
         skip_status = False
         for tag in description_tag_list:
@@ -50,6 +60,9 @@ def get_review(url, count, company):
                 skip_status = True
                 continue
 
+            wrangle_txt_and_write(tag, company)
+
+def wrangle_txt_and_write(tag, company, skip_status):
             text = str(tag)
 
             # A common problem: does this function return a new object or modify the original one?
@@ -65,60 +78,64 @@ def get_review(url, count, company):
 
             # If the txt file doesn't exist yet, do the following.
             # If it does, either delete its contents or write into a new file
-            with open('D:\\Python\\chart\\comp\\review\\' + company +'_review.txt', 'a') as outfile:
+            with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/review/' + company +'_review.txt', 'a') as outfile:
 
                   outfile.write(text_encoded)
                   outfile.write('\n')
 
 
-def main():
+def write_review_to_txt():
+    list_companies = main.getCompanies()
 
-    # ask for company name and generate urls for the first page and the pages after
-    company = input("Enter a company you want to extract reviews about: ")
-    abbr = input("Did you enter an abbreviation of company name? i.e. Did you enter only capitalized letters? "
-                 "Enter Y for yes, N for no: ")
-    many_cap = input("Does the name you entered consist of several words, each capitalized and connected with "
-                     "hyphen? Enter Y for yes, N for no: ")
-    if abbr == "Y":
-        pass
-    elif many_cap == "Y":
-        pass
-    else:
-        company = company.capitalize()
+    # # ask for company name and generate urls for the first page and the pages after
+    # company = input("Enter a company you want to extract reviews about: ")
+    # abbr = input("Did you enter an abbreviation of company name? i.e. Did you enter only capitalized letters? "
+    #              "Enter Y for yes, N for no: ")
+    # many_cap = input("Does the name you entered consist of several words, each capitalized and connected with "
+    #                  "hyphen? Enter Y for yes, N for no: ")
+    # if abbr == "Y":
+    #     pass
+    # elif many_cap == "Y":
+    #     pass
+    # else:
+    #     company = company.capitalize()
 
 
+    for company in list_companies:
+        url_1 = 'http://www.indeed.com/cmp/' + company + '/reviews'
+        url_2 = 'http://www.indeed.com/cmp/' + company + '/reviews' + '?fcountry=US&start='
 
-    url_1 = 'http://www.indeed.com/cmp/' + company + '/reviews'
-    url_2 = 'http://www.indeed.com/cmp/' + company + '/reviews' + '?fcountry=US&start='
+        count = 0
 
-    count = 0
 
-    while count >= 0 :
-        if count == 0:
-            # initiate the txt file, or overwrites it with emptiness
-            open('D:\\Python\\chart\\comp\\review\\' + company +'_review.txt', 'w').close()
-            url = url_1
-            get_review(url, count, company)
-            print(url + ' has been extracted')
-            count += 1
-        elif count >= 20:
-            print('The first 20 pages have been extracted')
-            break
-        else:
-            print(count)
-            url = url_2 + str(20 * count)
-            #print(url)
-            get_review(url, count, company)
-            print(url + ' has been extracted, count = ' + str(count))
-            count += 1
+        global reached_end
+        reached_end = False
+        while count >= 0 and reached_end == False:
+            if count == 0:
+                # initiate the txt file, or overwrites it with emptiness
+                open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/review/' + company +'_review.txt', 'w').close()
+                url = url_1
+                get_review(url, count, company)
+                print(url + ' has been extracted')
+                count += 1
+            elif count >= 20:
+                print('The first 20 pages have been extracted')
+                break
+            else:
+                print(count)
+                url = url_2 + str(20 * count)
+                #print(url)
+                get_review(url, count, company)
+                print(url + ' has been extracted, count = ' + str(count))
+                count += 1
 
 
 def clean_txt(company):
-        open('D:\\Python\\chart\\comp\\review\\' + company +'_review.txt', 'w').close()
+        open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/review/' + company +'_review.txt', 'w').close()
 
 
 if __name__ == '__main__':
-    main()
+    write_review_to_txt()
 # www.glassdoor.com
 # http://www.indeed.com/cmp/Indeed/reviews
 # http://www.indeed.com/cmp/Indeed/reviews?fcountry=US&start=20

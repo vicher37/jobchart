@@ -5,26 +5,24 @@ import urllib
 import json
 import pandas # as pd?
 import main
+import glassdoor
 
-#dict = {'name':[], 'like':[]}
 
 def return_facebook_likes():
 
-    #df = pandas.DataFrame()
-    list_companies = ['walmart', 'cisco', 'pepsi', 'facebook', 'generalmotors',
-                      'honda', 'ford', 'visa', 'vmware', 'realmassive']
-    #main.getCompanies()
+    list_companies = main.getCompanies()
 
 
-    graph_url = 'http://graph.facebook.com/'
+    graph_url = 'https://graph.facebook.com/'
+    token_string = '?access_token=469420909900371|d5d201a310cb06b1bac5775350c318c0'
     list_json = []
 
     with open('D:\\Python\\jobcharted\\jobcharted\\company\\fixtures\\fb.json', 'w') as outfile: # r for reading, w for writing (overwriting!), a for appending
         # you can use open(name, 'a'); this will create the file if the file does not exist, but will not truncate the existing file.
         for company in list_companies:
             # make graph api with company username
-            current_page = graph_url + company
-
+            current_page = graph_url + company + token_string
+            print(current_page)
             # open public page in facebook api  (the most important part really. should memorize it -- open, read, loads)
             try:
                 web_response = urllib.request.urlopen(current_page) # taking our URL string we created and storing the response
@@ -58,7 +56,9 @@ def return_facebook_likes():
             for obj in json_new_query:
                 dict['like'].append(obj['likes'])
                 dict['name'].append(obj['name'])
-            df_like = pandas.DataFrame(dict['like'], index=[dict['name']], columns=['FB_likes'])
+            print(dict['name'])
+            print(dict['like'])
+            df_like = pandas.DataFrame(dict['like'], index=dict['name'], columns=['FB_likes'])
 
             max_like = max(dict['like'])
             for obj in json_new_query :
@@ -78,9 +78,14 @@ def return_facebook_likes():
 
     outfile.close()
 
+# def refactor_indexes():
+#     new_index = glassdoor.get_min_names()
+#     old_df = return_facebook_likes('df')
+#     new_df = old_df.set_index(new_index)
+#     return new_df
+
 def return_fb_names():
     return dict['name']
 
 if __name__ == '__main__':
-    print(return_facebook_likes())
-    return_fb_names()
+    pass

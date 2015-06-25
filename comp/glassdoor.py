@@ -11,12 +11,7 @@ import main
 import random
 
 def add_glassdoor_rating():
-    if main.getCompanies() == ['walmart', 'cisco', 'pepsi', 'facebook', 'generalmotors',
-                      'honda', 'ford', 'visa', 'vmware', 'realmassive']:
-        list_companies = ['walmart', 'cisco', 'pepsi', 'facebook', 'gm',
-                      'honda', 'ford', 'visa', 'vmware', 'realmassive']
-    else:
-        list_companies = main.getCompanies()
+    list_companies = main.getCompanies()
     list_json = []
     #print(list_companies)
 
@@ -95,8 +90,9 @@ def add_glassdoor_rating():
             return df
 
 
+
 def sort_by():
-        df = add_glassdoor_rating()
+        df = add_glassdoor_rating('df')
         sort_by = input('Please choose which parameter you want to sort by from this list, '
                     'and type its full name as shown, without spaces: ' +
                     str(df.columns.values))
@@ -124,21 +120,13 @@ def weight_input ():
         for weight in weight_input:
             weight_int = int(weight)
             weight_int_list.append(weight_int)
-    #    print('weight num list', weightNum_list)
 
-
-#    try:
- #   print('weight num list', weightNum_list)
         weightNum_list = []
         for weight in weight_int_list:
             weightNum = int(weight)/sum(weight_int_list)
             weightNum_list.append(weightNum)
             print(weightNum)
-     #   print('weight num list', weightNum_list)
-  #  except TypeError:
-   #     print('There\'s something wrong with the type of your input (should be integers between 0 and 100).'
-    #          'Please try again.')
-     #   weight_input()
+
     print('weight int list',weight_int_list)
     print('weight num list', weightNum_list)
     return weightNum_list
@@ -188,6 +176,4 @@ def get_min_names():
 
 
 if __name__ == '__main__':
-    add_glassdoor_rating()
-    return_gd_names()
-    return_weighted_df()
+    print(add_glassdoor_rating())
