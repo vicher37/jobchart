@@ -10,8 +10,9 @@ h1, h2, h3 {
          font-weight: bold;
          text-align: center;
          color: white;
-
 }
+
+
 /* Tag selectors such as h2 are for font configuration only, such as boldness and size.
    Class selectors are for absolute positioning.*/
 
@@ -33,18 +34,18 @@ h1, h2, h3 {
 }
 .search {
         position: relative;
-        top: 150px;
+        top: 100px;
         text-align: center;
         z-index: 2;
         color: white;
 }
 
 .query {
-         top: 150px;
+         top: 120px;
 }
 .list {
         position: relative;
-        top: 150px;
+        top: 130px;
         font-size: 16px;
         text-align: center;
         z-index: 2;
@@ -62,21 +63,40 @@ h1, h2, h3 {
         position: relative;
 }
 
+.signature {
+    color: white;
+    position: relative;
+    bottom: -200px;
+}
+
+@media screen and (min-width: 1200px)  {
+    .input_box {
+    position: relative;
+    right: 40px;
+    }
+
+    .btn_submit {
+        position: relative;
+        right: 20px;
+    }
+}
+
 @media screen and (max-device-width: 768px)  { 
-         .search {
-                  position: relative;
-                  top: 20px;
-         }
-         .query {
-                  position: relative;
-                  top: 20px;
-         }
-         .list {
-                  position: relative;
-                  top: 20px;
-         }
+     .search {
+              position: relative;
+              top: 20px;
+     }
+     .query {
+              position: relative;
+              top: 20px;
+     }
+     .list {
+              position: relative;
+              top: 20px;
+     }
 }
 input::-webkit-input-placeholder { font-size: 12pt; }
 input::-moz-placeholder { font-size: 12pt; }
 input:-ms-input-placeholder { font-size: 12pt; }
 input:-moz-placeholder { font-size: 12pt; }
+
