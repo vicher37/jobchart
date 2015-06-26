@@ -25,7 +25,9 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '.pythonanywhere.com',
+    ]
 
 
 # Application definition
@@ -61,11 +63,10 @@ WSGI_APPLICATION = 'chart.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chart',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'vicher37$chart',
+        'USER': 'vicher37',
+        'PASSWORD': 'pw',
+        'HOST': 'mysql.server',
     }
 }
 
@@ -87,3 +88,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/vicher37/jobchart/static'
