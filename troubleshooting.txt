@@ -1,0 +1,7 @@
+How to export local mysql database:
+    in mysql workbench, write and run a query that gets desired results
+    in results panel, click export, go with default setting
+    import that file into pythonanywhere
+
+how to use gitignore:
+	gitignore is for some file you changed but don’t want to push to repo or don’t even want repo to realize it’s been changed, such as settings.py on pythonanywhere, and .idea/ folder.
