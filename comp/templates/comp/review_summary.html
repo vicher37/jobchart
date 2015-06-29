@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'comp/review_summary.css' %}" />
 
     <title>Review Analytics</title>
+
 </head>
 <body>
 
@@ -55,7 +55,73 @@
             <h2>{{ common_words.0.company }} - Review Analytics Summary</h2>
         {% endif %}
     </div>
+    <br></br>
+    <div class="chart_title">
+        <h4 class="text-center">The most frequent nouns and adjectives in reviews</h3>
+    </div>
+    <div class="chart"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var w = 1000,
+        h = 600;
 
+        //var graphs = [".noun", ".adj"];
+        //for (var i = 0; i < graphs.length; i++) {
+            //console.log(graphs[i]);
+            var svg = d3.select(".chart")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+            {% load staticfiles %}
+            d3.json("{% static "comp/summary.json" %}", function(error, json) {
+                if (error) return console.log(error);
+                var data = json;
+                console.log(data);
+                data = data.items;
+                console.log(data)
+                var max_n = 0;
+                for (var d in data) {
+                    max_n = Math.max(data[d].n, max_n);
+                }
+
+                var dx = w / max_n;
+                var dy = h / data.length;
+
+                // bars
+                var bars = svg.selectAll(".bar")
+                    .data(data)
+                    .enter()
+                    .append("rect")
+                    .attr("class", function(d, i) {return "bar " + d.label;})
+                    .attr("x", function(d, i) {return 0;})
+                    .attr("y", function(d, i) {return dy*i;})
+                    .attr("width", function(d, i) {return dx*d.n})
+                    .attr("height", dy);
+
+                // labels
+                var text = svg.selectAll("text")
+                    .data(data)
+                    .enter()
+                    .append("text")
+                    .attr("class", function(d, i) {return "label " + d.label;})
+                    .attr("x", function(d, i) {return dx * d.n - 10;})
+                    .attr("y", function(d, i) {return dy*i + 20 ;})
+                    .text( function(d) {return d.label + " (" + d.n  + ")";})
+                    .style("font-size", "15px")
+                    .attr("text-anchor", "end")
+                    .style("font-weight", "bold")
+                    .style("fill", "white");
+            });
+        //}
+
+    </script>
+    <!--        var a = "{{common_words}}"
+        console.log(a);-->
+    <!--src="../../static/comp/review_summary.js"--->
+    <!---{% load staticfiles %}
+    <script src="{% static 'comp/review_summary.js' %}"></script>
+    --->
     <div class="tableDiv">
         {% if common_words %}
             <table class="data table table-bordered table-striped table-hover container-fluid">

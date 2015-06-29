@@ -6,6 +6,7 @@ from django.template import RequestContext, loader
 import os
 import django
 from .forms import NameForm
+import json
 # this file connects data model with html
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "chart.settings")
@@ -32,6 +33,26 @@ def review_summaries(request, company_id):
     # filter for more than one result
     django.setup()
     words = review_summary.objects.filter(company_id = company_id)
+    words_list = words.values()
+    print(words.values()[0])
+    print(type(words))
+
+    wrapper_dict = {}
+    node_list = []
+    for word in words_list:
+        node = {}
+        node["label"] = word["word"]
+        node["n"] = word["frequency"]
+        node_list.append(node)
+    wrapper_dict["items"] = node_list
+    wrapper_dict = json.dumps(wrapper_dict)
+    print(wrapper_dict)
+    with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/static/comp/summary.json', 'w') as outfile:
+        outfile.write(str(wrapper_dict))
+
+
+
+
     # words_list = []
     # for word in words:
     #     word_split = word.__str__().split(',')
@@ -46,7 +67,7 @@ def review_summaries(request, company_id):
 
     # comment for review_summary.html : use attribute to retrieve attributes, not string method! The reason why we use
     # models is that we can retrieve attributes easily!!
-    return render(request, 'comp/review_summary.html', {'common_words' : words})
+    return render(request, 'comp/review_summary.html', {'common_words' : words, 'chart_data' : wrapper_dict})
 # The review summary for this company is not available.
 
 def company(request, company_id):
@@ -95,4 +116,4 @@ def get_name(request):
     #     return render(request, 'search_result.html', {'form': form})
 
 if __name__ == '__main__':
-    review_summaries('Walmart')
+    review_summaries(request, 1)

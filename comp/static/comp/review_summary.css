@@ -6,6 +6,24 @@ html,body
     padding: 0px;
     overflow-x: hidden;
 }
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.bar {
+    fill: steelblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    stroke-width:3;
+    stroke:#eee;
+}
 .tableDiv {
     overflow-x: scroll;
     overflow-y: scroll;
