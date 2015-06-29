@@ -5,6 +5,7 @@ from django import setup
 from comp.models import review_summary, ratings
 import os
 from pandas import *
+import json
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "chart.settings")
 
 def auto_tag(company):
@@ -135,15 +136,39 @@ def common_adjs(company):
         adj_fd_long_list.append(adj_list)
     return adj_fd_long_list
 
+def summary_json():
+    setup()
+    file = {}
+    comp_dict = {}
+    for r in ratings.objects.raw('SELECT * FROM comp_ratings'):
+        words = review_summary.objects.filter(company_id = r.id)
+        words_list = words.values()
+        # print(words.values()[0])
+        # print(type(words))
+
+        node_list = []
+        for word in words_list:
+            node = {}
+            node["label"] = word["word"]
+            node["n"] = word["frequency"]
+            node_list.append(node)
+        comp_dict[r.id] = node_list
+        print(comp_dict)
+    comp_dict = json.dumps(comp_dict, indent=4)
+    with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/static/comp/summary.json', 'a') as outfile:
+        outfile.write(str(comp_dict))
+
+
 if __name__ == '__main__':
-    table1 = common_phrases('Cisco')
-    print(table1)
-    print(len(table1))
-    print(get_length('Cisco'))
-    print(table1.ix[0, 1]/get_length('Cisco'))
-    table2 = common_phrases('Pepsi')
-    print(table2)
-    print(len(table2))
-    print(get_length('Pepsi'))
-    print(table2.ix[0, 1]/get_length('Pepsi'))
-    # TODO: still need to read info extraction chapter in the book
+    summary_json()
+    # table1 = common_phrases('Cisco')
+    # print(table1)
+    # print(len(table1))
+    # print(get_length('Cisco'))
+    # print(table1.ix[0, 1]/get_length('Cisco'))
+    # table2 = common_phrases('Pepsi')
+    # print(table2)
+    # print(len(table2))
+    # print(get_length('Pepsi'))
+    # print(table2.ix[0, 1]/get_length('Pepsi'))
+    # # TODO: still need to read info extraction chapter in the book

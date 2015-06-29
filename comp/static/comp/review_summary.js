@@ -35,3 +35,22 @@
           .enter().append("div")
             .style("width", function(d) { return x(d) + "px"; })
             .text(function(d) { return d; });
+
+
+
+
+                function (c) {
+                                if (d.n > max_n * 0.75) {
+                                    c = "#C06666";
+                                }
+                                else if (d.n > max_n * 0.5) {
+                                    c = "#D87373";
+                                }
+                                else if (d.n > max_n * 0.25) {
+                                    c = "#F08080";
+                                }
+                                else {
+                                    c = "#F28D8D";
+                                }
+                                return c;
+                            });

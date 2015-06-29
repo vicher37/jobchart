@@ -26,48 +26,12 @@ def rating_page(request, company_id):
     return render(request, 'comp/rating_page.html', {'rating' : rating})
 
 def review_summaries(request, company_id):
-    # common_nouns = comp.review_summary.common_nouns(company)
-    # common_adjs = comp.review_summary.common_adjs(company)
-    # common_tags = comp.review_summary.common_tags(company)
-    # print(common_adjs)
-    # filter for more than one result
     django.setup()
     words = review_summary.objects.filter(company_id = company_id)
-    words_list = words.values()
-    print(words.values()[0])
-    print(type(words))
-
-    wrapper_dict = {}
-    node_list = []
-    for word in words_list:
-        node = {}
-        node["label"] = word["word"]
-        node["n"] = word["frequency"]
-        node_list.append(node)
-    wrapper_dict["items"] = node_list
-    wrapper_dict = json.dumps(wrapper_dict)
-    print(wrapper_dict)
-    with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/static/comp/summary.json', 'w') as outfile:
-        outfile.write(str(wrapper_dict))
-
-
-
-
-    # words_list = []
-    # for word in words:
-    #     word_split = word.__str__().split(',')
-    #     words_list.append(word_split)
-    #word_list = []
-    #for word in words:
-        # print(word)
-    #    word_list.append(word)
-    #word_list_str = str(word_list)
-    #print(word_list_str)
-    #print(type(word_list))
 
     # comment for review_summary.html : use attribute to retrieve attributes, not string method! The reason why we use
     # models is that we can retrieve attributes easily!!
-    return render(request, 'comp/review_summary.html', {'common_words' : words, 'chart_data' : wrapper_dict})
+    return render(request, 'comp/review_summary.html', {'common_words' : words})
 # The review summary for this company is not available.
 
 def company(request, company_id):

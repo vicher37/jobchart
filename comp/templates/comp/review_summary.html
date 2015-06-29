@@ -55,67 +55,185 @@
             <h2>{{ common_words.0.company }} - Review Analytics Summary</h2>
         {% endif %}
     </div>
-    <br></br>
+    <br><br>
     <div class="chart_title">
-        <h4 class="text-center">The most frequent nouns and adjectives in reviews</h3>
+        <h4 class="text-center title">The most frequent nouns in reviews</h4>
     </div>
-    <div class="chart"></div>
+    <div class="noun"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
     <script type="text/javascript">
         var w = 1000,
-        h = 600;
+        h = 300;
 
-        //var graphs = [".noun", ".adj"];
-        //for (var i = 0; i < graphs.length; i++) {
-            //console.log(graphs[i]);
-            var svg = d3.select(".chart")
-                .append("svg")
-                .attr("width", w)
-                .attr("height", h);
+        var svg = d3.select(".noun")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
 
-            {% load staticfiles %}
-            d3.json("{% static "comp/summary.json" %}", function(error, json) {
-                if (error) return console.log(error);
-                var data = json;
-                console.log(data);
-                data = data.items;
-                console.log(data)
-                var max_n = 0;
-                for (var d in data) {
-                    max_n = Math.max(data[d].n, max_n);
-                }
+        {% load staticfiles %}
+        d3.json("{% static "comp/summary.json" %}", function(error, json) {
+            if (error) return console.log(error);
+            var data = json[{{ common_words.0.company_id }}].slice(0, 10);
+            console.log(data);
+            var max_n = 0;
+            for (var d in data) {
+                max_n = Math.max(data[d].n, max_n);
+            }
 
-                var dx = w / max_n;
-                var dy = h / data.length;
+            var dx = w / max_n;
+            var dy = h / data.length;
 
-                // bars
-                var bars = svg.selectAll(".bar")
-                    .data(data)
-                    .enter()
-                    .append("rect")
-                    .attr("class", function(d, i) {return "bar " + d.label;})
-                    .attr("x", function(d, i) {return 0;})
-                    .attr("y", function(d, i) {return dy*i;})
-                    .attr("width", function(d, i) {return dx*d.n})
-                    .attr("height", dy);
+            // bars
+            var bars = svg.selectAll(".bar")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("class", function(d, i) {return "bar " + d.label;})
+                .attr("x", function(d, i) {return 0;})
+                .attr("y", function(d, i) {return dy*i;})
+                .attr("width", function(d, i) {return dx*d.n})
+                .attr("height", dy)
+                .style("fill", "steelblue");
 
-                // labels
-                var text = svg.selectAll("text")
-                    .data(data)
-                    .enter()
-                    .append("text")
-                    .attr("class", function(d, i) {return "label " + d.label;})
-                    .attr("x", function(d, i) {return dx * d.n - 10;})
-                    .attr("y", function(d, i) {return dy*i + 20 ;})
-                    .text( function(d) {return d.label + " (" + d.n  + ")";})
-                    .style("font-size", "15px")
-                    .attr("text-anchor", "end")
-                    .style("font-weight", "bold")
-                    .style("fill", "white");
-            });
-        //}
+            // labels
+            var text = svg.selectAll("text")
+                .data(data)
+                .enter()
+                .append("text")
+                .attr("class", function(d, i) {return "label " + d.label;})
+                .attr("x", function(d, i) {return dx * d.n - 10;})
+                .attr("y", function(d, i) {return dy*i + 20 ;})
+                .text( function(d) {return d.label + " (" + d.n  + ")";})
+                .style("font-size", "15px")
+                .attr("text-anchor", "end")
+                .style("font-weight", "bold")
+                .style("fill", "white");
+
+        });
+        </script>
+
+    <div class="chart_title">
+        <h4 class="text-center title">The most frequent adjectives in reviews</h4>
+    </div>
+    <div class="adj"></div>
+    <script type="text/javascript">
+        var w = 1000,
+        h = 300;
+
+        var svg1 = d3.select(".adj")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+        {% load staticfiles %}
+        d3.json("{% static "comp/summary.json" %}", function(error, json) {
+            if (error) return console.log(error);
+            console.log("entered svg adj");
+            var data = json[{{ common_words.0.company_id }}].slice(10, 20);
+            console.log(data);
+            var max_n = 0;
+            for (var d in data) {
+                max_n = Math.max(data[d].n, max_n);
+            }
+
+            var dx = w / max_n;
+            var dy = h / data.length;
+
+            // bars
+            var bars = svg1.selectAll(".bar")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("class", function(d, i) {return "bar " + d.label;})
+                .attr("x", function(d, i) {return 0;})
+                .attr("y", function(d, i) {return dy*i;})
+                .attr("width", function (d, i) {return dx*d.n})
+                .attr("height", dy)
+                .style("fill", "#C26868");
+
+            // labels
+            var text = svg1.selectAll("text")
+                .data(data)
+                .enter()
+                .append("text")
+                .attr("class", function(d, i) {return "label " + d.label;})
+                .attr("x", function(d, i) {return dx * d.n - 10;})
+                .attr("y", function(d, i) {return dy*i + 20 ;})
+                .text( function(d) {return d.label + " (" + d.n  + ")";})
+                .style("font-size", "15px")
+                .attr("text-anchor", "end")
+                .style("font-weight", "bold")
+                .style("fill", "white");
+
+        });
+    </script>
+
+    <div class="chart_title">
+        <h4 class="text-center title" id="phrase_title"></h4>
+    </div>
+    <div class="phrase"></div>
+    <script type="text/javascript">
+
+
+        {% load staticfiles %}
+        d3.json("{% static "comp/summary.json" %}", function(error, json) {
+            if (error) return console.log(error);
+            if (String(json[{{ common_words.0.company_id }}].slice(20, 30)) == []) {
+                console.log("no data for phrases");
+            }
+            else {
+                var title = document.getElementById("phrase_title");
+                title.innerHTML = "The most frequent phrases in reviews";
+                var w = 1000,
+                h = 300;
+                var svg2 = d3.select(".phrase")
+                            .append("svg")
+                            .attr("width", w)
+                            .attr("height", h);
+
+                            console.log("entered svg phrase");
+                            var data = json[{{ common_words.0.company_id }}].slice(20, 30);
+                            console.log(data);
+                            var max_n = 0;
+                            for (var d in data) {
+                                max_n = Math.max(data[d].n, max_n);
+                            }
+
+                            var dx = w / max_n;
+                            var dy = h / data.length;
+
+                            // bars
+                            var bars = svg2.selectAll(".bar")
+                                .data(data)
+                                .enter()
+                                .append("rect")
+                                .attr("class", function(d, i) {return "bar " + d.label;})
+                                .attr("x", function(d, i) {return 0;})
+                                .attr("y", function(d, i) {return dy*i;})
+                                .attr("width", function (d, i) {return dx*d.n})
+                                .attr("height", dy)
+                                .style("fill", "#CF7C00");
+
+                            // labels
+                            var text = svg2.selectAll("text")
+                                .data(data)
+                                .enter()
+                                .append("text")
+                                .attr("class", function(d, i) {return "label " + d.label;})
+                                .attr("x", function(d, i) {return dx * d.n - 10;})
+                                .attr("y", function(d, i) {return dy*i + 20 ;})
+                                .text( function(d) {return d.label + " (" + d.n  + ")";})
+                                .style("font-size", "15px")
+                                .attr("text-anchor", "end")
+                                .style("font-weight", "bold")
+                                .style("fill", "white");
+
+                        };
+        });
+
 
     </script>
+
     <!--        var a = "{{common_words}}"
         console.log(a);-->
     <!--src="../../static/comp/review_summary.js"--->

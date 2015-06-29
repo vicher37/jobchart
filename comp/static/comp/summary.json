@@ -1,1 +1,2567 @@
-{"items": [{"label": "work", "n": 103}, {"label": "job", "n": 77}, {"label": "management", "n": 51}, {"label": "part", "n": 51}, {"label": "customers", "n": 49}, {"label": "people", "n": 45}, {"label": "day", "n": 39}, {"label": "time", "n": 25}, {"label": "managers", "n": 23}, {"label": "employees", "n": 22}, {"label": "great", "n": 36}, {"label": "good", "n": 24}, {"label": "more", "n": 21}, {"label": "typical", "n": 17}, {"label": "hard", "n": 15}, {"label": "fast", "n": 15}, {"label": "other", "n": 14}, {"label": "different", "n": 14}, {"label": "long", "n": 12}, {"label": "new", "n": 11}]}
+{
+    "1": [
+        {
+            "n": 103,
+            "label": "work"
+        },
+        {
+            "n": 77,
+            "label": "job"
+        },
+        {
+            "n": 51,
+            "label": "management"
+        },
+        {
+            "n": 51,
+            "label": "part"
+        },
+        {
+            "n": 49,
+            "label": "customers"
+        },
+        {
+            "n": 45,
+            "label": "people"
+        },
+        {
+            "n": 39,
+            "label": "day"
+        },
+        {
+            "n": 25,
+            "label": "time"
+        },
+        {
+            "n": 23,
+            "label": "managers"
+        },
+        {
+            "n": 22,
+            "label": "employees"
+        },
+        {
+            "n": 36,
+            "label": "great"
+        },
+        {
+            "n": 24,
+            "label": "good"
+        },
+        {
+            "n": 21,
+            "label": "more"
+        },
+        {
+            "n": 17,
+            "label": "typical"
+        },
+        {
+            "n": 15,
+            "label": "hard"
+        },
+        {
+            "n": 15,
+            "label": "fast"
+        },
+        {
+            "n": 14,
+            "label": "other"
+        },
+        {
+            "n": 14,
+            "label": "different"
+        },
+        {
+            "n": 12,
+            "label": "long"
+        },
+        {
+            "n": 11,
+            "label": "new"
+        }
+    ],
+    "2": [
+        {
+            "n": 291,
+            "label": "work"
+        },
+        {
+            "n": 103,
+            "label": "company"
+        },
+        {
+            "n": 100,
+            "label": "management"
+        },
+        {
+            "n": 99,
+            "label": "job"
+        },
+        {
+            "n": 90,
+            "label": "place"
+        },
+        {
+            "n": 84,
+            "label": "people"
+        },
+        {
+            "n": 81,
+            "label": "part"
+        },
+        {
+            "n": 70,
+            "label": "team"
+        },
+        {
+            "n": 59,
+            "label": "business"
+        },
+        {
+            "n": 54,
+            "label": "experience"
+        },
+        {
+            "n": 151,
+            "label": "great"
+        },
+        {
+            "n": 117,
+            "label": "good"
+        },
+        {
+            "n": 60,
+            "label": "many"
+        },
+        {
+            "n": 48,
+            "label": "new"
+        },
+        {
+            "n": 38,
+            "label": "different"
+        },
+        {
+            "n": 30,
+            "label": "best"
+        },
+        {
+            "n": 29,
+            "label": "more"
+        },
+        {
+            "n": 25,
+            "label": "typical"
+        },
+        {
+            "n": 25,
+            "label": "other"
+        },
+        {
+            "n": 22,
+            "label": "nice"
+        }
+    ],
+    "3": [
+        {
+            "n": 156,
+            "label": "work"
+        },
+        {
+            "n": 154,
+            "label": "job"
+        },
+        {
+            "n": 58,
+            "label": "management"
+        },
+        {
+            "n": 58,
+            "label": "day"
+        },
+        {
+            "n": 58,
+            "label": "part"
+        },
+        {
+            "n": 44,
+            "label": "company"
+        },
+        {
+            "n": 38,
+            "label": "people"
+        },
+        {
+            "n": 37,
+            "label": "time"
+        },
+        {
+            "n": 31,
+            "label": "hours"
+        },
+        {
+            "n": 25,
+            "label": "lot"
+        },
+        {
+            "n": 96,
+            "label": "great"
+        },
+        {
+            "n": 47,
+            "label": "good"
+        },
+        {
+            "n": 25,
+            "label": "long"
+        },
+        {
+            "n": 22,
+            "label": "hard"
+        },
+        {
+            "n": 20,
+            "label": "more"
+        },
+        {
+            "n": 19,
+            "label": "typical"
+        },
+        {
+            "n": 17,
+            "label": "fast"
+        },
+        {
+            "n": 17,
+            "label": "new"
+        },
+        {
+            "n": 15,
+            "label": "other"
+        },
+        {
+            "n": 15,
+            "label": "only"
+        }
+    ],
+    "4": [
+        {
+            "n": 16,
+            "label": "work"
+        },
+        {
+            "n": 11,
+            "label": "company"
+        },
+        {
+            "n": 10,
+            "label": "part"
+        },
+        {
+            "n": 9,
+            "label": "job"
+        },
+        {
+            "n": 7,
+            "label": "management"
+        },
+        {
+            "n": 4,
+            "label": "day"
+        },
+        {
+            "n": 4,
+            "label": "culture"
+        },
+        {
+            "n": 4,
+            "label": "time"
+        },
+        {
+            "n": 3,
+            "label": "place"
+        },
+        {
+            "n": 3,
+            "label": "candidates"
+        },
+        {
+            "n": 8,
+            "label": "great"
+        },
+        {
+            "n": 4,
+            "label": "much"
+        },
+        {
+            "n": 4,
+            "label": "good"
+        },
+        {
+            "n": 3,
+            "label": "typical"
+        },
+        {
+            "n": 3,
+            "label": "long"
+        },
+        {
+            "n": 3,
+            "label": "fast"
+        },
+        {
+            "n": 3,
+            "label": "hard"
+        },
+        {
+            "n": 2,
+            "label": "additional"
+        },
+        {
+            "n": 2,
+            "label": "best"
+        },
+        {
+            "n": 2,
+            "label": "several"
+        }
+    ],
+    "5": [
+        {
+            "n": 256,
+            "label": "work"
+        },
+        {
+            "n": 203,
+            "label": "job"
+        },
+        {
+            "n": 122,
+            "label": "part"
+        },
+        {
+            "n": 105,
+            "label": "management"
+        },
+        {
+            "n": 82,
+            "label": "day"
+        },
+        {
+            "n": 72,
+            "label": "company"
+        },
+        {
+            "n": 67,
+            "label": "people"
+        },
+        {
+            "n": 62,
+            "label": "time"
+        },
+        {
+            "n": 57,
+            "label": "place"
+        },
+        {
+            "n": 54,
+            "label": "parts"
+        },
+        {
+            "n": 113,
+            "label": "great"
+        },
+        {
+            "n": 94,
+            "label": "good"
+        },
+        {
+            "n": 55,
+            "label": "new"
+        },
+        {
+            "n": 38,
+            "label": "different"
+        },
+        {
+            "n": 38,
+            "label": "hard"
+        },
+        {
+            "n": 33,
+            "label": "other"
+        },
+        {
+            "n": 32,
+            "label": "many"
+        },
+        {
+            "n": 32,
+            "label": "general"
+        },
+        {
+            "n": 32,
+            "label": "typical"
+        },
+        {
+            "n": 25,
+            "label": "nice"
+        }
+    ],
+    "6": [
+        {
+            "n": 87,
+            "label": "work"
+        },
+        {
+            "n": 56,
+            "label": "job"
+        },
+        {
+            "n": 46,
+            "label": "day"
+        },
+        {
+            "n": 38,
+            "label": "part"
+        },
+        {
+            "n": 33,
+            "label": "management"
+        },
+        {
+            "n": 29,
+            "label": "people"
+        },
+        {
+            "n": 24,
+            "label": "place"
+        },
+        {
+            "n": 23,
+            "label": "customers"
+        },
+        {
+            "n": 22,
+            "label": "company"
+        },
+        {
+            "n": 19,
+            "label": "time"
+        },
+        {
+            "n": 33,
+            "label": "good"
+        },
+        {
+            "n": 29,
+            "label": "great"
+        },
+        {
+            "n": 15,
+            "label": "best"
+        },
+        {
+            "n": 15,
+            "label": "new"
+        },
+        {
+            "n": 13,
+            "label": "hard"
+        },
+        {
+            "n": 11,
+            "label": "sure"
+        },
+        {
+            "n": 10,
+            "label": "typical"
+        },
+        {
+            "n": 10,
+            "label": "nice"
+        },
+        {
+            "n": 9,
+            "label": "friendly"
+        },
+        {
+            "n": 9,
+            "label": "other"
+        }
+    ],
+    "7": [
+        {
+            "n": 278,
+            "label": "work"
+        },
+        {
+            "n": 153,
+            "label": "job"
+        },
+        {
+            "n": 127,
+            "label": "company"
+        },
+        {
+            "n": 99,
+            "label": "part"
+        },
+        {
+            "n": 95,
+            "label": "management"
+        },
+        {
+            "n": 85,
+            "label": "day"
+        },
+        {
+            "n": 62,
+            "label": "place"
+        },
+        {
+            "n": 58,
+            "label": "employees"
+        },
+        {
+            "n": 51,
+            "label": "team"
+        },
+        {
+            "n": 50,
+            "label": "people"
+        },
+        {
+            "n": 151,
+            "label": "great"
+        },
+        {
+            "n": 84,
+            "label": "good"
+        },
+        {
+            "n": 44,
+            "label": "new"
+        },
+        {
+            "n": 44,
+            "label": "many"
+        },
+        {
+            "n": 25,
+            "label": "typical"
+        },
+        {
+            "n": 25,
+            "label": "hard"
+        },
+        {
+            "n": 23,
+            "label": "long"
+        },
+        {
+            "n": 22,
+            "label": "different"
+        },
+        {
+            "n": 22,
+            "label": "other"
+        },
+        {
+            "n": 20,
+            "label": "best"
+        }
+    ],
+    "8": [
+        {
+            "n": 98,
+            "label": "work"
+        },
+        {
+            "n": 68,
+            "label": "visa"
+        },
+        {
+            "n": 52,
+            "label": "management"
+        },
+        {
+            "n": 48,
+            "label": "job"
+        },
+        {
+            "n": 46,
+            "label": "company"
+        },
+        {
+            "n": 32,
+            "label": "part"
+        },
+        {
+            "n": 29,
+            "label": "people"
+        },
+        {
+            "n": 28,
+            "label": "team"
+        },
+        {
+            "n": 26,
+            "label": "place"
+        },
+        {
+            "n": 23,
+            "label": "time"
+        },
+        {
+            "n": 47,
+            "label": "good"
+        },
+        {
+            "n": 47,
+            "label": "great"
+        },
+        {
+            "n": 15,
+            "label": "more"
+        },
+        {
+            "n": 13,
+            "label": "other"
+        },
+        {
+            "n": 10,
+            "label": "many"
+        },
+        {
+            "n": 10,
+            "label": "fast"
+        },
+        {
+            "n": 10,
+            "label": "typical"
+        },
+        {
+            "n": 10,
+            "label": "only"
+        },
+        {
+            "n": 9,
+            "label": "different"
+        },
+        {
+            "n": 8,
+            "label": "long"
+        }
+    ],
+    "9": [
+        {
+            "n": 50,
+            "label": "work"
+        },
+        {
+            "n": 43,
+            "label": "company"
+        },
+        {
+            "n": 29,
+            "label": "management"
+        },
+        {
+            "n": 21,
+            "label": "people"
+        },
+        {
+            "n": 19,
+            "label": "sales"
+        },
+        {
+            "n": 18,
+            "label": "team"
+        },
+        {
+            "n": 16,
+            "label": "job"
+        },
+        {
+            "n": 13,
+            "label": "test"
+        },
+        {
+            "n": 13,
+            "label": "part"
+        },
+        {
+            "n": 13,
+            "label": "place"
+        },
+        {
+            "n": 44,
+            "label": "great"
+        },
+        {
+            "n": 25,
+            "label": "good"
+        },
+        {
+            "n": 14,
+            "label": "new"
+        },
+        {
+            "n": 9,
+            "label": "more"
+        },
+        {
+            "n": 9,
+            "label": "excellent"
+        },
+        {
+            "n": 8,
+            "label": "high"
+        },
+        {
+            "n": 7,
+            "label": "various"
+        },
+        {
+            "n": 7,
+            "label": "best"
+        },
+        {
+            "n": 6,
+            "label": "global"
+        },
+        {
+            "n": 6,
+            "label": "sure"
+        }
+    ],
+    "10": [],
+    "11": [
+        {
+            "n": 322,
+            "label": "work"
+        },
+        {
+            "n": 159,
+            "label": "company"
+        },
+        {
+            "n": 124,
+            "label": "people"
+        },
+        {
+            "n": 95,
+            "label": "job"
+        },
+        {
+            "n": 90,
+            "label": "place"
+        },
+        {
+            "n": 89,
+            "label": "management"
+        },
+        {
+            "n": 82,
+            "label": "team"
+        },
+        {
+            "n": 68,
+            "label": "part"
+        },
+        {
+            "n": 57,
+            "label": "day"
+        },
+        {
+            "n": 57,
+            "label": "culture"
+        },
+        {
+            "n": 177,
+            "label": "great"
+        },
+        {
+            "n": 109,
+            "label": "good"
+        },
+        {
+            "n": 66,
+            "label": "new"
+        },
+        {
+            "n": 51,
+            "label": "other"
+        },
+        {
+            "n": 48,
+            "label": "many"
+        },
+        {
+            "n": 41,
+            "label": "more"
+        },
+        {
+            "n": 33,
+            "label": "best"
+        },
+        {
+            "n": 33,
+            "label": "different"
+        },
+        {
+            "n": 30,
+            "label": "hard"
+        },
+        {
+            "n": 25,
+            "label": "much"
+        },
+        {
+            "n": 33,
+            "label": "great place"
+        },
+        {
+            "n": 19,
+            "label": "great company"
+        },
+        {
+            "n": 15,
+            "label": "typical day"
+        },
+        {
+            "n": 11,
+            "label": "good place"
+        },
+        {
+            "n": 9,
+            "label": "good company"
+        },
+        {
+            "n": 9,
+            "label": "great people"
+        },
+        {
+            "n": 8,
+            "label": "great benefits"
+        },
+        {
+            "n": 8,
+            "label": "great team"
+        },
+        {
+            "n": 6,
+            "label": "great experience"
+        },
+        {
+            "n": 6,
+            "label": "good work"
+        }
+    ],
+    "12": [
+        {
+            "n": 279,
+            "label": "work"
+        },
+        {
+            "n": 126,
+            "label": "job"
+        },
+        {
+            "n": 96,
+            "label": "company"
+        },
+        {
+            "n": 89,
+            "label": "part"
+        },
+        {
+            "n": 88,
+            "label": "people"
+        },
+        {
+            "n": 81,
+            "label": "management"
+        },
+        {
+            "n": 73,
+            "label": "place"
+        },
+        {
+            "n": 64,
+            "label": "day"
+        },
+        {
+            "n": 62,
+            "label": "team"
+        },
+        {
+            "n": 50,
+            "label": "experience"
+        },
+        {
+            "n": 182,
+            "label": "great"
+        },
+        {
+            "n": 51,
+            "label": "good"
+        },
+        {
+            "n": 43,
+            "label": "new"
+        },
+        {
+            "n": 40,
+            "label": "more"
+        },
+        {
+            "n": 35,
+            "label": "hard"
+        },
+        {
+            "n": 28,
+            "label": "free"
+        },
+        {
+            "n": 27,
+            "label": "typical"
+        },
+        {
+            "n": 27,
+            "label": "best"
+        },
+        {
+            "n": 26,
+            "label": "amazing"
+        },
+        {
+            "n": 23,
+            "label": "other"
+        },
+        {
+            "n": 28,
+            "label": "great place"
+        },
+        {
+            "n": 18,
+            "label": "typical day"
+        },
+        {
+            "n": 17,
+            "label": "great company"
+        },
+        {
+            "n": 12,
+            "label": "great work"
+        },
+        {
+            "n": 12,
+            "label": "free food"
+        },
+        {
+            "n": 8,
+            "label": "great people"
+        },
+        {
+            "n": 7,
+            "label": "full time"
+        },
+        {
+            "n": 7,
+            "label": "great experience"
+        },
+        {
+            "n": 6,
+            "label": "amazing company"
+        },
+        {
+            "n": 5,
+            "label": "great benefits"
+        }
+    ],
+    "13": [
+        {
+            "n": 349,
+            "label": "work"
+        },
+        {
+            "n": 178,
+            "label": "company"
+        },
+        {
+            "n": 143,
+            "label": "job"
+        },
+        {
+            "n": 114,
+            "label": "management"
+        },
+        {
+            "n": 95,
+            "label": "people"
+        },
+        {
+            "n": 88,
+            "label": "part"
+        },
+        {
+            "n": 81,
+            "label": "day"
+        },
+        {
+            "n": 72,
+            "label": "team"
+        },
+        {
+            "n": 70,
+            "label": "time"
+        },
+        {
+            "n": 70,
+            "label": "place"
+        },
+        {
+            "n": 158,
+            "label": "good"
+        },
+        {
+            "n": 127,
+            "label": "great"
+        },
+        {
+            "n": 51,
+            "label": "more"
+        },
+        {
+            "n": 47,
+            "label": "new"
+        },
+        {
+            "n": 46,
+            "label": "many"
+        },
+        {
+            "n": 34,
+            "label": "typical"
+        },
+        {
+            "n": 33,
+            "label": "other"
+        },
+        {
+            "n": 33,
+            "label": "different"
+        },
+        {
+            "n": 29,
+            "label": "best"
+        },
+        {
+            "n": 28,
+            "label": "much"
+        },
+        {
+            "n": 29,
+            "label": "typical day"
+        },
+        {
+            "n": 23,
+            "label": "good place"
+        },
+        {
+            "n": 23,
+            "label": "good company"
+        },
+        {
+            "n": 22,
+            "label": "great company"
+        },
+        {
+            "n": 15,
+            "label": "great place"
+        },
+        {
+            "n": 7,
+            "label": "good people"
+        },
+        {
+            "n": 7,
+            "label": "great people"
+        },
+        {
+            "n": 7,
+            "label": "professional skills"
+        },
+        {
+            "n": 6,
+            "label": "new things"
+        },
+        {
+            "n": 6,
+            "label": "best part"
+        }
+    ],
+    "14": [
+        {
+            "n": 155,
+            "label": "work"
+        },
+        {
+            "n": 90,
+            "label": "job"
+        },
+        {
+            "n": 69,
+            "label": "part"
+        },
+        {
+            "n": 49,
+            "label": "day"
+        },
+        {
+            "n": 44,
+            "label": "management"
+        },
+        {
+            "n": 42,
+            "label": "time"
+        },
+        {
+            "n": 40,
+            "label": "people"
+        },
+        {
+            "n": 35,
+            "label": "company"
+        },
+        {
+            "n": 34,
+            "label": "parts"
+        },
+        {
+            "n": 29,
+            "label": "place"
+        },
+        {
+            "n": 83,
+            "label": "great"
+        },
+        {
+            "n": 31,
+            "label": "good"
+        },
+        {
+            "n": 24,
+            "label": "more"
+        },
+        {
+            "n": 23,
+            "label": "new"
+        },
+        {
+            "n": 23,
+            "label": "different"
+        },
+        {
+            "n": 18,
+            "label": "hard"
+        },
+        {
+            "n": 17,
+            "label": "typical"
+        },
+        {
+            "n": 16,
+            "label": "best"
+        },
+        {
+            "n": 14,
+            "label": "sure"
+        },
+        {
+            "n": 13,
+            "label": "fast"
+        },
+        {
+            "n": 15,
+            "label": "typical day"
+        },
+        {
+            "n": 11,
+            "label": "great people"
+        },
+        {
+            "n": 8,
+            "label": "great place"
+        },
+        {
+            "n": 7,
+            "label": "best part"
+        },
+        {
+            "n": 5,
+            "label": "great company"
+        },
+        {
+            "n": 4,
+            "label": "high level"
+        },
+        {
+            "n": 4,
+            "label": "same time"
+        },
+        {
+            "n": 3,
+            "label": "different jobs"
+        },
+        {
+            "n": 3,
+            "label": "new things"
+        },
+        {
+            "n": 3,
+            "label": "good benefits"
+        }
+    ],
+    "15": [
+        {
+            "n": 362,
+            "label": "work"
+        },
+        {
+            "n": 138,
+            "label": "company"
+        },
+        {
+            "n": 132,
+            "label": "job"
+        },
+        {
+            "n": 99,
+            "label": "place"
+        },
+        {
+            "n": 96,
+            "label": "part"
+        },
+        {
+            "n": 95,
+            "label": "management"
+        },
+        {
+            "n": 85,
+            "label": "team"
+        },
+        {
+            "n": 79,
+            "label": "day"
+        },
+        {
+            "n": 76,
+            "label": "people"
+        },
+        {
+            "n": 62,
+            "label": "time"
+        },
+        {
+            "n": 200,
+            "label": "great"
+        },
+        {
+            "n": 106,
+            "label": "good"
+        },
+        {
+            "n": 71,
+            "label": "new"
+        },
+        {
+            "n": 50,
+            "label": "many"
+        },
+        {
+            "n": 41,
+            "label": "typical"
+        },
+        {
+            "n": 39,
+            "label": "more"
+        },
+        {
+            "n": 39,
+            "label": "best"
+        },
+        {
+            "n": 37,
+            "label": "other"
+        },
+        {
+            "n": 34,
+            "label": "hard"
+        },
+        {
+            "n": 26,
+            "label": "much"
+        },
+        {
+            "n": 48,
+            "label": "great place"
+        },
+        {
+            "n": 35,
+            "label": "typical day"
+        },
+        {
+            "n": 22,
+            "label": "great company"
+        },
+        {
+            "n": 13,
+            "label": "great benefits"
+        },
+        {
+            "n": 9,
+            "label": "good company"
+        },
+        {
+            "n": 9,
+            "label": "good place"
+        },
+        {
+            "n": 7,
+            "label": "great work"
+        },
+        {
+            "n": 7,
+            "label": "best part"
+        },
+        {
+            "n": 6,
+            "label": "new technology"
+        },
+        {
+            "n": 6,
+            "label": "great people"
+        }
+    ],
+    "16": [
+        {
+            "n": 341,
+            "label": "work"
+        },
+        {
+            "n": 140,
+            "label": "company"
+        },
+        {
+            "n": 120,
+            "label": "place"
+        },
+        {
+            "n": 102,
+            "label": "job"
+        },
+        {
+            "n": 100,
+            "label": "experience"
+        },
+        {
+            "n": 81,
+            "label": "part"
+        },
+        {
+            "n": 80,
+            "label": "skills"
+        },
+        {
+            "n": 80,
+            "label": "leadership"
+        },
+        {
+            "n": 80,
+            "label": "people"
+        },
+        {
+            "n": 60,
+            "label": "intern"
+        },
+        {
+            "n": 240,
+            "label": "great"
+        },
+        {
+            "n": 120,
+            "label": "good"
+        },
+        {
+            "n": 80,
+            "label": "many"
+        },
+        {
+            "n": 60,
+            "label": "new"
+        },
+        {
+            "n": 60,
+            "label": "electric"
+        },
+        {
+            "n": 60,
+            "label": "general"
+        },
+        {
+            "n": 40,
+            "label": "bad"
+        },
+        {
+            "n": 40,
+            "label": "better"
+        },
+        {
+            "n": 40,
+            "label": "long"
+        },
+        {
+            "n": 40,
+            "label": "only"
+        },
+        {
+            "n": 80,
+            "label": "great place"
+        },
+        {
+            "n": 60,
+            "label": "great company"
+        },
+        {
+            "n": 40,
+            "label": "great experience"
+        },
+        {
+            "n": 20,
+            "label": "little focus"
+        },
+        {
+            "n": 20,
+            "label": "specific tower"
+        },
+        {
+            "n": 20,
+            "label": "safe work"
+        },
+        {
+            "n": 20,
+            "label": "different seasons"
+        },
+        {
+            "n": 20,
+            "label": "major emphasis"
+        },
+        {
+            "n": 20,
+            "label": "mechanical failure"
+        },
+        {
+            "n": 20,
+            "label": "bad thing"
+        }
+    ],
+    "17": [
+        {
+            "n": 269,
+            "label": "work"
+        },
+        {
+            "n": 151,
+            "label": "job"
+        },
+        {
+            "n": 135,
+            "label": "company"
+        },
+        {
+            "n": 113,
+            "label": "management"
+        },
+        {
+            "n": 111,
+            "label": "part"
+        },
+        {
+            "n": 79,
+            "label": "people"
+        },
+        {
+            "n": 74,
+            "label": "day"
+        },
+        {
+            "n": 58,
+            "label": "place"
+        },
+        {
+            "n": 54,
+            "label": "team"
+        },
+        {
+            "n": 51,
+            "label": "lot"
+        },
+        {
+            "n": 143,
+            "label": "great"
+        },
+        {
+            "n": 103,
+            "label": "good"
+        },
+        {
+            "n": 46,
+            "label": "different"
+        },
+        {
+            "n": 45,
+            "label": "new"
+        },
+        {
+            "n": 44,
+            "label": "more"
+        },
+        {
+            "n": 41,
+            "label": "many"
+        },
+        {
+            "n": 29,
+            "label": "typical"
+        },
+        {
+            "n": 27,
+            "label": "excellent"
+        },
+        {
+            "n": 24,
+            "label": "other"
+        },
+        {
+            "n": 23,
+            "label": "much"
+        },
+        {
+            "n": 26,
+            "label": "typical day"
+        },
+        {
+            "n": 22,
+            "label": "great company"
+        },
+        {
+            "n": 19,
+            "label": "great place"
+        },
+        {
+            "n": 10,
+            "label": "good place"
+        },
+        {
+            "n": 10,
+            "label": "good company"
+        },
+        {
+            "n": 6,
+            "label": "great people"
+        },
+        {
+            "n": 5,
+            "label": "great team"
+        },
+        {
+            "n": 5,
+            "label": "new skills"
+        },
+        {
+            "n": 5,
+            "label": "red tape"
+        },
+        {
+            "n": 5,
+            "label": "excellent company"
+        }
+    ],
+    "18": [
+        {
+            "n": 110,
+            "label": "work"
+        },
+        {
+            "n": 80,
+            "label": "job"
+        },
+        {
+            "n": 57,
+            "label": "part"
+        },
+        {
+            "n": 52,
+            "label": "people"
+        },
+        {
+            "n": 50,
+            "label": "management"
+        },
+        {
+            "n": 46,
+            "label": "day"
+        },
+        {
+            "n": 44,
+            "label": "products"
+        },
+        {
+            "n": 40,
+            "label": "company"
+        },
+        {
+            "n": 37,
+            "label": "place"
+        },
+        {
+            "n": 34,
+            "label": "team"
+        },
+        {
+            "n": 87,
+            "label": "great"
+        },
+        {
+            "n": 36,
+            "label": "new"
+        },
+        {
+            "n": 31,
+            "label": "good"
+        },
+        {
+            "n": 20,
+            "label": "typical"
+        },
+        {
+            "n": 18,
+            "label": "many"
+        },
+        {
+            "n": 17,
+            "label": "only"
+        },
+        {
+            "n": 14,
+            "label": "more"
+        },
+        {
+            "n": 14,
+            "label": "different"
+        },
+        {
+            "n": 13,
+            "label": "responsible"
+        },
+        {
+            "n": 13,
+            "label": "best"
+        },
+        {
+            "n": 24,
+            "label": "great place"
+        },
+        {
+            "n": 17,
+            "label": "typical day"
+        },
+        {
+            "n": 15,
+            "label": "new products"
+        },
+        {
+            "n": 5,
+            "label": "great company"
+        },
+        {
+            "n": 4,
+            "label": "great people"
+        },
+        {
+            "n": 4,
+            "label": "great team"
+        },
+        {
+            "n": 4,
+            "label": "great experience"
+        },
+        {
+            "n": 4,
+            "label": "good job"
+        },
+        {
+            "n": 3,
+            "label": "excellent job"
+        },
+        {
+            "n": 3,
+            "label": "typical work"
+        }
+    ],
+    "19": [
+        {
+            "n": 240,
+            "label": "work"
+        },
+        {
+            "n": 189,
+            "label": "job"
+        },
+        {
+            "n": 120,
+            "label": "part"
+        },
+        {
+            "n": 109,
+            "label": "people"
+        },
+        {
+            "n": 105,
+            "label": "company"
+        },
+        {
+            "n": 96,
+            "label": "day"
+        },
+        {
+            "n": 95,
+            "label": "management"
+        },
+        {
+            "n": 94,
+            "label": "customers"
+        },
+        {
+            "n": 62,
+            "label": "time"
+        },
+        {
+            "n": 55,
+            "label": "employees"
+        },
+        {
+            "n": 146,
+            "label": "great"
+        },
+        {
+            "n": 89,
+            "label": "good"
+        },
+        {
+            "n": 43,
+            "label": "more"
+        },
+        {
+            "n": 36,
+            "label": "new"
+        },
+        {
+            "n": 36,
+            "label": "typical"
+        },
+        {
+            "n": 35,
+            "label": "many"
+        },
+        {
+            "n": 35,
+            "label": "different"
+        },
+        {
+            "n": 32,
+            "label": "best"
+        },
+        {
+            "n": 31,
+            "label": "hard"
+        },
+        {
+            "n": 29,
+            "label": "sure"
+        },
+        {
+            "n": 29,
+            "label": "typical day"
+        },
+        {
+            "n": 21,
+            "label": "great place"
+        },
+        {
+            "n": 8,
+            "label": "great company"
+        },
+        {
+            "n": 7,
+            "label": "best part"
+        },
+        {
+            "n": 7,
+            "label": "great people"
+        },
+        {
+            "n": 6,
+            "label": "electrical equipment"
+        },
+        {
+            "n": 6,
+            "label": "good company"
+        },
+        {
+            "n": 5,
+            "label": "great team"
+        },
+        {
+            "n": 5,
+            "label": "upper management"
+        },
+        {
+            "n": 5,
+            "label": "good benefits"
+        }
+    ],
+    "20": [
+        {
+            "n": 315,
+            "label": "work"
+        },
+        {
+            "n": 160,
+            "label": "company"
+        },
+        {
+            "n": 133,
+            "label": "job"
+        },
+        {
+            "n": 120,
+            "label": "people"
+        },
+        {
+            "n": 99,
+            "label": "part"
+        },
+        {
+            "n": 85,
+            "label": "management"
+        },
+        {
+            "n": 81,
+            "label": "day"
+        },
+        {
+            "n": 66,
+            "label": "time"
+        },
+        {
+            "n": 57,
+            "label": "team"
+        },
+        {
+            "n": 55,
+            "label": "place"
+        },
+        {
+            "n": 143,
+            "label": "great"
+        },
+        {
+            "n": 84,
+            "label": "good"
+        },
+        {
+            "n": 40,
+            "label": "new"
+        },
+        {
+            "n": 37,
+            "label": "other"
+        },
+        {
+            "n": 37,
+            "label": "more"
+        },
+        {
+            "n": 34,
+            "label": "best"
+        },
+        {
+            "n": 33,
+            "label": "hard"
+        },
+        {
+            "n": 33,
+            "label": "different"
+        },
+        {
+            "n": 32,
+            "label": "typical"
+        },
+        {
+            "n": 30,
+            "label": "many"
+        },
+        {
+            "n": 24,
+            "label": "great company"
+        },
+        {
+            "n": 24,
+            "label": "typical day"
+        },
+        {
+            "n": 20,
+            "label": "great place"
+        },
+        {
+            "n": 11,
+            "label": "good company"
+        },
+        {
+            "n": 8,
+            "label": "great people"
+        },
+        {
+            "n": 7,
+            "label": "great benefits"
+        },
+        {
+            "n": 7,
+            "label": "good people"
+        },
+        {
+            "n": 5,
+            "label": "new skills"
+        },
+        {
+            "n": 5,
+            "label": "many opportunities"
+        },
+        {
+            "n": 5,
+            "label": "good place"
+        }
+    ],
+    "21": [
+        {
+            "n": 249,
+            "label": "work"
+        },
+        {
+            "n": 196,
+            "label": "job"
+        },
+        {
+            "n": 140,
+            "label": "part"
+        },
+        {
+            "n": 118,
+            "label": "people"
+        },
+        {
+            "n": 104,
+            "label": "customers"
+        },
+        {
+            "n": 99,
+            "label": "management"
+        },
+        {
+            "n": 94,
+            "label": "day"
+        },
+        {
+            "n": 77,
+            "label": "shell"
+        },
+        {
+            "n": 71,
+            "label": "company"
+        },
+        {
+            "n": 57,
+            "label": "store"
+        },
+        {
+            "n": 117,
+            "label": "great"
+        },
+        {
+            "n": 85,
+            "label": "good"
+        },
+        {
+            "n": 46,
+            "label": "different"
+        },
+        {
+            "n": 41,
+            "label": "new"
+        },
+        {
+            "n": 38,
+            "label": "more"
+        },
+        {
+            "n": 36,
+            "label": "typical"
+        },
+        {
+            "n": 34,
+            "label": "nice"
+        },
+        {
+            "n": 30,
+            "label": "friendly"
+        },
+        {
+            "n": 29,
+            "label": "many"
+        },
+        {
+            "n": 26,
+            "label": "busy"
+        },
+        {
+            "n": 31,
+            "label": "typical day"
+        },
+        {
+            "n": 11,
+            "label": "good place"
+        },
+        {
+            "n": 10,
+            "label": "new people"
+        },
+        {
+            "n": 10,
+            "label": "great company"
+        },
+        {
+            "n": 7,
+            "label": "best part"
+        },
+        {
+            "n": 7,
+            "label": "great place"
+        },
+        {
+            "n": 6,
+            "label": "good people"
+        },
+        {
+            "n": 6,
+            "label": "great people"
+        },
+        {
+            "n": 5,
+            "label": "great job"
+        },
+        {
+            "n": 5,
+            "label": "good company"
+        }
+    ],
+    "22": [
+        {
+            "n": 59,
+            "label": "service"
+        },
+        {
+            "n": 56,
+            "label": "work"
+        },
+        {
+            "n": 47,
+            "label": "cars"
+        },
+        {
+            "n": 36,
+            "label": "day"
+        },
+        {
+            "n": 33,
+            "label": "management"
+        },
+        {
+            "n": 29,
+            "label": "job"
+        },
+        {
+            "n": 21,
+            "label": "part"
+        },
+        {
+            "n": 17,
+            "label": "company"
+        },
+        {
+            "n": 15,
+            "label": "place"
+        },
+        {
+            "n": 14,
+            "label": "people"
+        },
+        {
+            "n": 52,
+            "label": "great"
+        },
+        {
+            "n": 25,
+            "label": "typical"
+        },
+        {
+            "n": 17,
+            "label": "reasonable"
+        },
+        {
+            "n": 16,
+            "label": "good"
+        },
+        {
+            "n": 9,
+            "label": "new"
+        },
+        {
+            "n": 7,
+            "label": "fast"
+        },
+        {
+            "n": 6,
+            "label": "con"
+        },
+        {
+            "n": 6,
+            "label": "hard"
+        },
+        {
+            "n": 6,
+            "label": "only"
+        },
+        {
+            "n": 5,
+            "label": "nice"
+        },
+        {
+            "n": 23,
+            "label": "typical day"
+        },
+        {
+            "n": 5,
+            "label": "great place"
+        },
+        {
+            "n": 4,
+            "label": "great people"
+        },
+        {
+            "n": 2,
+            "label": "great job"
+        },
+        {
+            "n": 2,
+            "label": "great management"
+        },
+        {
+            "n": 2,
+            "label": "little opportunity"
+        },
+        {
+            "n": 2,
+            "label": "great team"
+        },
+        {
+            "n": 2,
+            "label": "good place"
+        },
+        {
+            "n": 1,
+            "label": "certain amount"
+        },
+        {
+            "n": 1,
+            "label": "long hours"
+        }
+    ],
+    "23": [
+        {
+            "n": 90,
+            "label": "work"
+        },
+        {
+            "n": 39,
+            "label": "management"
+        },
+        {
+            "n": 36,
+            "label": "place"
+        },
+        {
+            "n": 31,
+            "label": "people"
+        },
+        {
+            "n": 28,
+            "label": "company"
+        },
+        {
+            "n": 20,
+            "label": "systems"
+        },
+        {
+            "n": 19,
+            "label": "workers"
+        },
+        {
+            "n": 18,
+            "label": "quality"
+        },
+        {
+            "n": 18,
+            "label": "job"
+        },
+        {
+            "n": 18,
+            "label": "edge"
+        },
+        {
+            "n": 89,
+            "label": "great"
+        },
+        {
+            "n": 16,
+            "label": "good"
+        },
+        {
+            "n": 6,
+            "label": "typical"
+        },
+        {
+            "n": 5,
+            "label": "many"
+        },
+        {
+            "n": 5,
+            "label": "nice"
+        },
+        {
+            "n": 4,
+            "label": "medical"
+        },
+        {
+            "n": 4,
+            "label": "best"
+        },
+        {
+            "n": 4,
+            "label": "small"
+        },
+        {
+            "n": 4,
+            "label": "better"
+        },
+        {
+            "n": 4,
+            "label": "wonderful"
+        },
+        {
+            "n": 27,
+            "label": "great place"
+        },
+        {
+            "n": 19,
+            "label": "great people"
+        },
+        {
+            "n": 8,
+            "label": "great company"
+        },
+        {
+            "n": 3,
+            "label": "good work"
+        },
+        {
+            "n": 3,
+            "label": "typical day"
+        },
+        {
+            "n": 2,
+            "label": "large company"
+        },
+        {
+            "n": 2,
+            "label": "great work"
+        },
+        {
+            "n": 2,
+            "label": "great benefits"
+        },
+        {
+            "n": 2,
+            "label": "great opportunities"
+        },
+        {
+            "n": 1,
+            "label": "recent graduate"
+        }
+    ],
+    "24": [
+        {
+            "n": 6,
+            "label": "place"
+        },
+        {
+            "n": 4,
+            "label": "work"
+        },
+        {
+            "n": 3,
+            "label": "learning"
+        },
+        {
+            "n": 2,
+            "label": "management"
+        },
+        {
+            "n": 2,
+            "label": "communication"
+        },
+        {
+            "n": 1,
+            "label": "skills"
+        },
+        {
+            "n": 1,
+            "label": "leadership"
+        },
+        {
+            "n": 1,
+            "label": "company"
+        },
+        {
+            "n": 1,
+            "label": "manner"
+        },
+        {
+            "n": 1,
+            "label": "times"
+        },
+        {
+            "n": 4,
+            "label": "good"
+        },
+        {
+            "n": 2,
+            "label": "great"
+        },
+        {
+            "n": 2,
+            "label": "friendly"
+        },
+        {
+            "n": 1,
+            "label": "genuine"
+        },
+        {
+            "n": 1,
+            "label": "more"
+        },
+        {
+            "n": 1,
+            "label": "timely"
+        },
+        {
+            "n": 1,
+            "label": "separate"
+        },
+        {
+            "n": 1,
+            "label": "long"
+        },
+        {
+            "n": 1,
+            "label": "wonderful"
+        },
+        {
+            "n": 1,
+            "label": "high"
+        },
+        {
+            "n": 1,
+            "label": "good work"
+        },
+        {
+            "n": 1,
+            "label": "timely manner"
+        },
+        {
+            "n": 1,
+            "label": "great learning"
+        },
+        {
+            "n": 1,
+            "label": "friendly management"
+        },
+        {
+            "n": 1,
+            "label": "great place"
+        },
+        {
+            "n": 1,
+            "label": "more facilities"
+        },
+        {
+            "n": 1,
+            "label": "wonderful company"
+        },
+        {
+            "n": 1,
+            "label": "good place"
+        },
+        {
+            "n": 1,
+            "label": "separate learning"
+        }
+    ],
+    "25": [
+        {
+            "n": 280,
+            "label": "work"
+        },
+        {
+            "n": 164,
+            "label": "job"
+        },
+        {
+            "n": 124,
+            "label": "management"
+        },
+        {
+            "n": 120,
+            "label": "company"
+        },
+        {
+            "n": 110,
+            "label": "people"
+        },
+        {
+            "n": 97,
+            "label": "part"
+        },
+        {
+            "n": 88,
+            "label": "team"
+        },
+        {
+            "n": 87,
+            "label": "employees"
+        },
+        {
+            "n": 79,
+            "label": "day"
+        },
+        {
+            "n": 72,
+            "label": "time"
+        },
+        {
+            "n": 129,
+            "label": "great"
+        },
+        {
+            "n": 103,
+            "label": "good"
+        },
+        {
+            "n": 65,
+            "label": "more"
+        },
+        {
+            "n": 59,
+            "label": "new"
+        },
+        {
+            "n": 44,
+            "label": "different"
+        },
+        {
+            "n": 41,
+            "label": "many"
+        },
+        {
+            "n": 33,
+            "label": "best"
+        },
+        {
+            "n": 33,
+            "label": "other"
+        },
+        {
+            "n": 31,
+            "label": "long"
+        },
+        {
+            "n": 29,
+            "label": "typical"
+        },
+        {
+            "n": 20,
+            "label": "typical day"
+        },
+        {
+            "n": 15,
+            "label": "great company"
+        },
+        {
+            "n": 15,
+            "label": "great place"
+        },
+        {
+            "n": 10,
+            "label": "good place"
+        },
+        {
+            "n": 8,
+            "label": "good people"
+        },
+        {
+            "n": 8,
+            "label": "best part"
+        },
+        {
+            "n": 7,
+            "label": "full time"
+        },
+        {
+            "n": 7,
+            "label": "typical work"
+        },
+        {
+            "n": 6,
+            "label": "good company"
+        },
+        {
+            "n": 5,
+            "label": "upper management"
+        }
+    ]
+}
