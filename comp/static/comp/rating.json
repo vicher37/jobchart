@@ -1,0 +1,452 @@
+{
+    "1": [
+        {
+            "label": "overall_rating",
+            "n": 2.9
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 2.8
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 2.5
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 2.6
+        }
+    ],
+    "2": [
+        {
+            "label": "overall_rating",
+            "n": 3.6
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 4.0
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.7
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 4.0
+        }
+    ],
+    "3": [
+        {
+            "label": "overall_rating",
+            "n": 3.4
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.3
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 2.9
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 2.8
+        }
+    ],
+    "4": [
+        {
+            "label": "overall_rating",
+            "n": 4.5
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 4.5
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 4.3
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.9
+        }
+    ],
+    "5": [
+        {
+            "label": "overall_rating",
+            "n": 3.5
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.2
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.5
+        }
+    ],
+    "6": [
+        {
+            "label": "overall_rating",
+            "n": 3.3
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 0.0
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 0.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 0.0
+        }
+    ],
+    "7": [
+        {
+            "label": "overall_rating",
+            "n": 3.4
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.3
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.1
+        }
+    ],
+    "8": [
+        {
+            "label": "overall_rating",
+            "n": 3.0
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 2.6
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 2.4
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.2
+        }
+    ],
+    "9": [
+        {
+            "label": "overall_rating",
+            "n": 3.6
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.7
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.1
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.7
+        }
+    ],
+    "10": [
+        {
+            "label": "overall_rating",
+            "n": 0.0
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 0.0
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 0.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 0.0
+        }
+    ],
+    "11": [
+        {
+            "label": "overall_rating",
+            "n": 3.8
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.5
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.5
+        }
+    ],
+    "12": [
+        {
+            "label": "overall_rating",
+            "n": 4.4
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 4.4
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.8
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 4.0
+        }
+    ],
+    "13": [
+        {
+            "label": "overall_rating",
+            "n": 3.1
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 2.9
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 2.4
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.2
+        }
+    ],
+    "14": [
+        {
+            "label": "overall_rating",
+            "n": 4.0
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 0.0
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 0.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 0.0
+        }
+    ],
+    "15": [
+        {
+            "label": "overall_rating",
+            "n": 3.9
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.8
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.2
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.6
+        }
+    ],
+    "16": [
+        {
+            "label": "overall_rating",
+            "n": 3.7
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.6
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.2
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.4
+        }
+    ],
+    "17": [
+        {
+            "label": "overall_rating",
+            "n": 3.6
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.4
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.1
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.5
+        }
+    ],
+    "18": [
+        {
+            "label": "overall_rating",
+            "n": 3.4
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.5
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.7
+        }
+    ],
+    "19": [
+        {
+            "label": "overall_rating",
+            "n": 3.5
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.5
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 2.9
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.8
+        }
+    ],
+    "20": [
+        {
+            "label": "overall_rating",
+            "n": 3.8
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.8
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.2
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.4
+        }
+    ],
+    "21": [
+        {
+            "label": "overall_rating",
+            "n": 3.7
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.7
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.4
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.9
+        }
+    ],
+    "22": [
+        {
+            "label": "overall_rating",
+            "n": 3.9
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.4
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 2.6
+        }
+    ],
+    "23": [
+        {
+            "label": "overall_rating",
+            "n": 3.8
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.9
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 3.3
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.8
+        }
+    ],
+    "24": [
+        {
+            "label": "overall_rating",
+            "n": 4.2
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 4.3
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 4.0
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 2.8
+        }
+    ],
+    "25": [
+        {
+            "label": "overall_rating",
+            "n": 3.3
+        },
+        {
+            "label": "culture_and_values_rating",
+            "n": 3.2
+        },
+        {
+            "label": "senior_leadership_rating",
+            "n": 2.6
+        },
+        {
+            "label": "work_life_balance_rating",
+            "n": 3.4
+        }
+    ]
+}
