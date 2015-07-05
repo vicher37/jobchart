@@ -18,6 +18,27 @@ h2 {
         word-wrap: break-word;
         width: 400px;
 }
+
+
+.bar {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    stroke-width:3;
+    stroke:#eee;
+}
+
+.chart_title {
+    font-weight: bold;
+
+}
+
+.tableDiv,
+.noun, {
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
 /* Tag selectors such as h2 are for font configuration only, such as boldness and size.
    Class selectors are for absolute positioning.*/
 .title {

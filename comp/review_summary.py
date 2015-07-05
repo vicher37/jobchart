@@ -158,9 +158,67 @@ def summary_json():
     with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/static/comp/summary.json', 'a') as outfile:
         outfile.write(str(comp_dict))
 
+def rating_json():
+    setup()
+    comp_dict = {}
+    for r in ratings.objects.raw('SELECT * FROM comp_ratings'):
+        print(r.id)
+        rating = ratings.objects.filter(id = r.id)
+        rating_values = rating.values()
+        print(rating_values)
+        fields = ratings._meta.get_all_field_names()
+        node_list = []
+        for field in ratings._meta.get_all_field_names():
+            if field == "id": continue
+            elif field == "company" : continue
+            elif field == "FB_likes" : continue
+            elif field == "FB_likes_score": continue
+            elif field == "recommend_to_friend_rating": continue
+            node = {}
+            node["label"] = field
+            node["n"] = float(rating_values[0][field])
+            node_list.append(node)
+        comp_dict[r.id] = node_list
+        print(comp_dict)
+    comp_dict = json.dumps(comp_dict, indent=4)
+    with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/static/comp/rating.json', 'w') as outfile:
+        outfile.write(str(comp_dict))
+
+def for_bubble_chart():
+    setup()
+    wrapper_dict = {}
+    wrapper_dict["name"] = "companies"
+    wrapper_dict["children"] = []
+    for r in ratings.objects.raw('SELECT * FROM comp_ratings'):
+        words = review_summary.objects.filter(company_id = r.id)
+        words_list = words.values()
+        comp_dict = {}
+        print(words_list)
+        try:
+            comp_dict["name"] = words_list[0]["company"]
+        except:
+            continue
+        comp_dict["children"] = []
+        for word in words_list:
+            node_dict = {}
+            node_dict["name"] = word["word"]
+            node_dict["size"] = word["frequency"]
+            comp_dict["children"].append(node_dict)
+        wrapper_dict["children"].append(comp_dict)
+    print(wrapper_dict)
+    wrapper_dict = json.dumps(wrapper_dict, indent=4)
+    with open('/Users/vickyzhang/Documents/python/chart/jobchart/comp/static/comp/for_bubble.json', 'w') as outfile:
+        outfile.write(str(wrapper_dict))
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
-    summary_json()
+    rating_json()
     # table1 = common_phrases('Cisco')
     # print(table1)
     # print(len(table1))
